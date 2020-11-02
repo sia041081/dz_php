@@ -61,7 +61,7 @@ echo '<br>';
 echo "<h3>Задача 3</h3>";
 echo '<br>';
 $str_task_3 = "Объекты, как и массивы, являются итерируемыми сущностями.";
-for ($z = 0; $z < strlen($str_task_3); $z++) {
+for ($z = 0; $z < mb_strlen($str_task_3); $z++) {
 
     $char_2 = substr($str_task_3, $z, 1);
     if ($char_2 == ' ') {
@@ -96,10 +96,10 @@ $arr_task4 = explode(" ", $str_task4); // Перевёл в  строку мас
 $max_word = $arr_task4[0];
 $counter = 1;
 for ($r = 1; $r < count($arr_task4); $r++) {
-    if (strlen($arr_task4[$r]) > strlen($max_word)) {
+    if (mb_strlen($arr_task4[$r]) > mb_strlen($max_word)) {
         $max_word = $arr_task4[$r];
         $counter = 1;
-    } elseif (strlen($arr_task4[$r]) == strlen($max_word)) {
+    } elseif (mb_strlen($arr_task4[$r]) == mb_strlen($max_word)) {
         $counter = $counter + 1;
 
     }

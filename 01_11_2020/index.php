@@ -67,6 +67,7 @@ echo '<br>';
 echo "<h3>Задача 3</h3>";
 echo '<br>';
 $str = "Объекты, как и массивы, являются итерируемыми сущностями.";
+<<<<<<< HEAD
 function palindrom($str)
 {
     for ($z = 0; $z < mb_strlen($str); $z++) {
@@ -84,6 +85,20 @@ function palindrom($str)
 
 echo palindrom($str);
 
+=======
+for ($z = 0; $z < mb_strlen($str); $z++) {
+
+    $str = str_replace(" ", "", $str);
+    $str = str_replace(",", "", $str);
+}
+if ($str == strrev($str)) {
+    $answer = "<h4>Строка</h4><br> $str <br> <h4>является палиндромом</h4>";
+} else {
+    $answer = "<h4>Строка</h4><br> $str <br> <h4>не является палиндромом</h4>";
+}
+
+echo $answer;
+>>>>>>> 6454a9d01840c052b608acd58be8c71cfcae6cb1
 echo '<br>';
 echo '<br>';
 echo '<br>';
@@ -92,6 +107,7 @@ echo '<br>';
 Случай, когда самых длинных слов может быть несколько, не обрабатывать.*/
 echo '<h3>Задача 4</h3>';
 echo '<br>';
+<<<<<<< HEAD
 $str = "Однако такая  итерация по видимым свойствам зачастую бывает совершенно бесполезной";
 function long_word($str)
 {
@@ -104,6 +120,18 @@ function long_word($str)
             $counter = 1;
         } elseif (mb_strlen($arr[$r]) == mb_strlen($max_word)) {
             $counter = $counter + 1;
+=======
+$str_task4 = "Однако такая  итерация по видимым свойствам зачастую бывает  совершенно бесполезной";
+$arr_task4 = explode(" ", $str_task4); // Перевёл в  строку массив
+$max_word = $arr_task4[0];
+$counter = 1;
+for ($r = 1; $r < count($arr_task4); $r++) {
+    if (mb_strlen($arr_task4[$r]) > mb_strlen($max_word)) {
+        $max_word = $arr_task4[$r];
+        $counter = 1;
+    } elseif (mb_strlen($arr_task4[$r]) == mb_strlen($max_word)) {
+        $counter = $counter + 1;
+>>>>>>> 6454a9d01840c052b608acd58be8c71cfcae6cb1
 
         }
     }
@@ -141,4 +169,9 @@ function upper_char($str)
     echo $min . ' ' . 'символов в нижнем регистре' . '<br>';
     echo $max . ' ' . 'символов в верхнем регистре' . '<br>';
 }
+<<<<<<< HEAD
 echo upper_char($str);
+=======
+echo $min . ' ' . 'символов в нижнем регистре' . '<br>';
+echo $max . ' ' . 'символов в верхнем регистре' . '<br>';
+>>>>>>> 6454a9d01840c052b608acd58be8c71cfcae6cb1

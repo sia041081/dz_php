@@ -60,29 +60,19 @@ echo '<br>';
  т.е. одинаково пишется как с начала, так и с конца.*/
 echo "<h3>Задача 3</h3>";
 echo '<br>';
-$str_task_3 = "Объекты, как и массивы, являются итерируемыми сущностями.";
-for ($z = 0; $z < mb_strlen($str_task_3); $z++) {
+$str = "Объекты, как и массивы, являются итерируемыми сущностями.";
+for ($z = 0; $z < mb_strlen($str); $z++) {
 
-    $char_2 = substr($str_task_3, $z, 1);
-    if ($char_2 == ' ') {
-
-        $str_task_3 = substr_replace($str_task_3, '', $z, 1);
-        $z--;
-    }
-    if ($char_2 == ',') {
-
-        $str_task_3 = substr_replace($str_task_3, '', $z, 1);
-        $z--;
-    }
-    if ($str_task_3 == strrev($str_task_3)) {
-        $answer = "<h4>Строка</h4><br> $str_task_3 <br> <h4>является палиндромом</h4>";
-    } else {
-        $answer = "<h4>Строка</h4><br> $str_task_3 <br> <h4>не является палиндромом</h4>";
-    }
+    $str = str_replace(" ", "", $str);
+    $str = str_replace(",", "", $str);
+}
+if ($str == strrev($str)) {
+    $answer = "<h4>Строка</h4><br> $str <br> <h4>является палиндромом</h4>";
+} else {
+    $answer = "<h4>Строка</h4><br> $str <br> <h4>не является палиндромом</h4>";
 }
 
 echo $answer;
-
 echo '<br>';
 echo '<br>';
 echo '<br>';

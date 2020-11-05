@@ -1,6 +1,7 @@
 <?php
 
-function rem_spaces($str) {  //удалить пробелы
+function rem_spaces($str)
+{  //удалить пробелы
 
     $str = rtrim($str);
     $skip_spaces = true;
@@ -24,7 +25,7 @@ function rem_spaces($str) {  //удалить пробелы
         }
     }
     $str_next = $str;
-    echo $str_next;
+    return $str_next;
 }
 
 function find_word($str) //поиск слова
@@ -32,11 +33,12 @@ function find_word($str) //поиск слова
     $str = explode(' ', $str);
     for ($y = 0; $y < count($str); $y++) {
         if (mb_strlen($str[$y]) >= 3 && mb_strlen($str[$y]) <= 5) {
-            echo $str[$y] . ' ';
+            $founf_word = $str[$y] . ' ';
         } else {
-            echo "<h4>Таких слов нет</h4>";
+            $founf_word = "<h4>Таких слов нет</h4>";
         }
     }
+    return $founf_word;
 }
 
 function palindrom($str)
@@ -51,7 +53,7 @@ function palindrom($str)
     } else {
         $answer = "<h4>Строка</h4><br> $str <br> <h4>не является палиндромом</h4>";
     }
-    echo $answer;
+    return $answer;
 }
 
 function long_word($str)
@@ -70,10 +72,11 @@ function long_word($str)
     }
 
     if ($counter == 1) {
-        echo $max_word;
+        $long_word = $max_word;
     } else {
-        echo $str . ' ' . ' Содержит несколько слов одинаковой длины.';
+        $long_word = $str . ' ' . ' Содержит несколько слов одинаковой длины.';
     }
+    return $long_word;
 }
 
 function upper_char($str)
@@ -87,7 +90,13 @@ function upper_char($str)
         } elseif ($arr[$t] >= "А" && $arr[$t] <= "Я") {
             $max++;
         }
+        if ($arr[$t] >= "a" && $arr[$t] <= "z") {
+            $min++;
+        } elseif ($arr[$t] >= "A" && $arr[$t] <= "Z") {
+            $max++;
+        }
     }
     echo $min . ' ' . 'символов в нижнем регистре' . '<br>';
     echo $max . ' ' . 'символов в верхнем регистре' . '<br>';
+
 }

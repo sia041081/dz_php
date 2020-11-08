@@ -10,21 +10,21 @@
             <h1 class="my-4">Page Heading
                 <small>Secondary Text</small>
             </h1>
-
-            <!-- Blog Post -->
-            <div class="card mb-4">
-                <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
-                <div class="card-body">
-                    <h2 class="card-title">Post Title</h2>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-                    <a href="#" class="btn btn-primary">Read More &rarr;</a>
+            <?php foreach ($data as $page) : ?>
+                <!-- Blog Post -->
+                <div class="card mb-4">
+                    <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+                    <div class="card-body">
+                        <h2 class="card-title"><?=$page['title']?></h2>
+                        <p class="card-text"><?=mb_substr($page['content'], 0, 100)?></p>
+                        <a href="/?page_type=<?=$page['id']?>" class="btn btn-primary">Read More &rarr;</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Posted on January 1, 2020 by
+                        <a href="#">Start Bootstrap</a>
+                    </div>
                 </div>
-                <div class="card-footer text-muted">
-                    Posted on January 1, 2020 by
-                    <a href="#">Start Bootstrap</a>
-                </div>
-            </div>
-
+            <?php endforeach; ?>
             <!-- Pagination -->
             <ul class="pagination justify-content-center mb-4">
                 <li class="page-item">
@@ -92,7 +92,8 @@
             <div class="card my-4">
                 <h5 class="card-header">Side Widget</h5>
                 <div class="card-body">
-                    You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
+                    You can put anything you want inside of these side widgets. They are easy to use, and feature the
+                    new Bootstrap 4 card containers!
                 </div>
             </div>
 

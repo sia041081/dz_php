@@ -34,5 +34,5 @@ if ($_POST["task"] == "long_word") {
 if ($_POST["task"] == "upper_char") {
     echo "<h4>Задача №5</h4> Посчитать количество строчных и прописных букв в строке";
     echo '<br>';
-    echo $_GET[upper_char($str)];
+    echo upper_char($str);
 }

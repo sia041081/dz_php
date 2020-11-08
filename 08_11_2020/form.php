@@ -1,6 +1,5 @@
-
 <form action="action.php" method="post">
-    <p><input type="text" name="name" placeholder="Ваше значение:" id="values"/></p>
+    <p>Ваше значение: <input type="text" name="name"/></p>
     <p>
         <select name="task">
             <option value="rem_spaces">"Задача №1"</option>

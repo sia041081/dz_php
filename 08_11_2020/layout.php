@@ -12,7 +12,6 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
 
     <!-- Custom styles for this template -->
     <link href="css/blog-home.css" rel="stylesheet">
@@ -30,30 +29,26 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href='<?$_GET["task"] ="rem_spaces"?>'>Задача 1
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Задача 2</a>
+                    <a class="nav-link" href="#">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Задача 3</a>
+                    <a class="nav-link" href="#">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Задача 4</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Задача 5</a>
+                    <a class="nav-link" href="#">Contact</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-
-<?php include_once 'form.php'?>
-
+<?=$pageName?>
+<?php include_once $pageName.'.php'?>
 <!-- Footer -->
 <footer class="py-5 bg-dark">
     <div class="container">

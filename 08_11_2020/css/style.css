@@ -1,0 +1,19 @@
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+#values {
+    width: 300px;
+    border: none;
+    border-bottom: 2px solid;
+    outline: none;
+}
+select {
+    border: none;
+    border-bottom: 1px solid;
+}
+iframe{
+    display: none;
+}

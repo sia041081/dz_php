@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4cb15752-b51b-4fe5-b5e5-ab8860446962" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="Remote PHP 7.4" />
+  <component name="ProjectId" id="1jRvdnQzBk22YERRlZoLR7qAPud" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../dz/01_11_2020" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\dz\01_11_2020" />
+      <recent name="D:\openserver\OpenServer\domains\homestead.test\public" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4cb15752-b51b-4fe5-b5e5-ab8860446962" name="Default Changelist" comment="" />
+      <created>1603779809283</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603779809283</updated>
+      <workItem from="1603779810484" duration="19293000" />
+      <workItem from="1603899907461" duration="49000" />
+      <workItem from="1603980647309" duration="25787000" />
+      <workItem from="1604163026874" duration="38598000" />
+      <workItem from="1604374042478" duration="26146000" />
+      <workItem from="1604554314922" duration="5743000" />
+      <workItem from="1604664863444" duration="5382000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="263" y="24" key="#CLI_Interpreters" timestamp="1604066610584">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="263" y="24" key="#CLI_Interpreters/0.0.1366.738@0.0.1366.738" timestamp="1604066610584" />
+    <state x="476" y="89" key="#Docker" timestamp="1604066305519">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="476" y="89" key="#Docker/0.0.1366.738@0.0.1366.738" timestamp="1604066305519" />
+    <state x="309" y="47" key="#Inspections" timestamp="1603872113020">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="309" y="47" key="#Inspections/0.0.1366.738@0.0.1366.738" timestamp="1603872113020" />
+    <state x="390" y="0" key="#PHP" timestamp="1604066718927">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="390" y="0" key="#PHP/0.0.1366.738@0.0.1366.738" timestamp="1604066718927" />
+    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1604296701801">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1604296701801" />
+    <state x="517" y="292" key="NewPhpFileDialog" timestamp="1604665550968">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="517" y="292" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1604665550968" />
+    <state x="339" y="165" key="run.anything.popup" timestamp="1604665836281">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1604665836281" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1604388659425">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1604388659425" />
+  </component>
+</project>

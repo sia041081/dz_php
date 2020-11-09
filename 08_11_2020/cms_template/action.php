@@ -1,5 +1,5 @@
 <?php
-require_once('./cms-tempalate/function.php');
+require_once('./cms_template/function.php');
 $str = $_POST['name'];
 
 if ($_POST["task"] == "rem_spaces") {

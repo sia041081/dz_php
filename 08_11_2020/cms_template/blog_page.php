@@ -17,7 +17,7 @@
                     <div class="card-body">
                         <h2 class="card-title"><?=$page['title']?></h2>
                         <p class="card-text"><?=mb_substr($page['content'], 0, 100)?></p>
-                        <a href="/?page_type=<?=$page['id']?>" class="btn btn-primary">Read More &rarr;</a>
+                        <a href="/?page_type=<?=$page[$data]?>" class="btn btn-primary">Read More &rarr;</a>
                     </div>
                     <div class="card-footer text-muted">
                         Posted on January 1, 2020 by

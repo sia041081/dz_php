@@ -117,7 +117,7 @@
                 <?php require_once '../db.php' ?>
                 <?php
                 if (isset($_POST['submit'])) {
-                    move_uploaded_file($_FILES['img_down']['tmp_name'], "uploads/" . $_FILES['img_down']['name']);
+                    move_uploaded_file($_FILES['img_down']['tmp_name'], "../uploads/" . $_FILES['img_down']['name']);
                 }
                 if (!empty($_POST)) {
                     $sql = "INSERT INTO `pages` (`title`, `img`, `content`, `author`, `category`, `img_name`)

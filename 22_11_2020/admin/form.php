@@ -20,8 +20,10 @@
 <?php
 if (!empty($_POST)){
    $sql = "INSERT INTO `pages` (`title`, `img`, `content`, `author`, `category`)
-    VALUES ('{$_POST['title']}', '{$_POST['img']}', '{$_POST['content']}', '{$_POST['author']}', 
-    '{$_POST['category']}')
-";
+    VALUES ('{$_POST['title']}', '{$_POST['img']}', '{$_POST['content']}', '{$_POST['author']}','{$_POST['category']}')";
    mysqli_query($connection, $sql);
+}
+
+if (isset($_POST['submit'])) {
+    move_uploaded_file($_FILES['img']['tmp_name'], "uploads/" . $_FILES['img']['name']);
 }

@@ -100,31 +100,25 @@
             <input type="checkbox" id="pseudoBtn">
             <div class="form_added">
                 <form action="" method="post" enctype="multipart/form-data">
-                    <input type="text" name="title" placeholder="Заголовок" style="margin: 10px"/>
+                    <input type="text" name="title" placeholder="title"/>
                     <br>
-                    <input type="text" name="img" placeholder="Ссылка на картинку" style="margin: 10px"/>
+                    <input type="text" name="img" placeholder="img"/>
                     <br>
-                    <input type="hidden" name="MAX_FILE_SIZE" value="30000"/>
-                    <input type="file" name="img_down"/>
-                    <?php
-                    $uploads_dir = '/uploads';
-                    $name = $_FILES['img_down']['tmp_name'];
-                    move_uploaded_file ( $_FILES["img_down"]["name"] , "$uploads_dir/$name")?>
-                    
+                    <textarea name="content" id="" cols="30" rows="10" placeholder="content"></textarea>
                     <br>
-                    <textarea name="content" id="" placeholder="Ваш текст" cols="30" rows="10"
-                              style="margin: 10px"></textarea>
+                    <input type="text" name="author" placeholder="author"/>
                     <br>
-                    <input type="text" name="author" placeholder="Автор" style="margin: 10px"/>
+                    <input type="text" name="category" placeholder="category"/>
                     <br>
-                    <input type="text" name="category" placeholder="Категория новости" style="margin: 10px"/>
-
-
-                    <br>
-                    <button type="submit" style="margin: 10px">Сохранить</button>
+                    <input type="file" name="img_down"><br>
+                    <input type="submit" name="submit" value="Загрузить">
+<!--                    <button type="submit">Save</button>-->
                 </form>
                 <?php require_once '../db.php' ?>
                 <?php
+                if (isset($_POST['submit'])) {
+                    move_uploaded_file($_FILES['img_down']['tmp_name'], "uploads/" . $_FILES['img_down']['name']);
+                }
                 if (!empty($_POST)) {
                     $sql = "INSERT INTO `pages` (`title`, `img`, `content`, `author`, `category`, `img_name`)
                   VALUES ('{$_POST['title']}', '{$_POST['img']}', '{$_POST['content']}', '{$_POST['author']}','{$_POST['category']}', '{$_FILES['img_down']['name']}')";

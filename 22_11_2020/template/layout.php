@@ -1,3 +1,5 @@
+<?php require_once 'db.php'?>
+<?php //require_once 'template/main.php'?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,10 +38,10 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="/admin">Админка</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Sample Post</a>

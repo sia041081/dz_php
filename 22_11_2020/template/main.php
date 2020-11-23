@@ -1,4 +1,5 @@
 <?php
+
 $sql = "SELECT * FROM pages;";
 $result = mysqli_query($connection, $sql);
 
@@ -30,7 +31,7 @@ require_once __DIR__ . '/headers/' . $name . '_header.php';
             <?php endforeach; ?>
             <!-- Pager -->
             <div class="clearfix">
-                <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+                <a class="btn btn-primary float-right" href="?page_type=article&id=<?=$article['id']?>">Osfsplder Posts &rarr;</a>
             </div>
         </div>
     </div>

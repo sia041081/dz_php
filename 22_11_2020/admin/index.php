@@ -71,8 +71,8 @@
     </form>
     <ul class="nav menu">
         <li class="active"><a href="#"><em class="fa fa-dashboard">&nbsp;</em> Добавить статью</a></li>
-        <!--<li><a href="widgets.html"><em class="fa fa-calendar">&nbsp;</em> Widgets</a></li>
-        <li><a href="charts.html"><em class="fa fa-bar-chart">&nbsp;</em> Charts</a></li>
+        <li><a href="/"><em class="fa fa-calendar">&nbsp;</em> На главную</a></li>
+        <!--<li><a href="charts.html"><em class="fa fa-bar-chart">&nbsp;</em> Charts</a></li>
         <li><a href="elements.html"><em class="fa fa-toggle-off">&nbsp;</em> UI Elements</a></li>
         <li><a href="panels.html"><em class="fa fa-clone">&nbsp;</em> Alerts &amp; Panels</a></li>
         <li class="parent "><a data-toggle="collapse" href="#sub-item-1">-->
@@ -112,7 +112,7 @@
                     <br>
                     <input type="file" name="img_down"><br>
                     <input type="submit" name="submit" value="Загрузить">
-<!--                    <button type="submit">Save</button>-->
+                    <!--                    <button type="submit">Save</button>-->
                 </form>
                 <?php require_once '../db.php' ?>
                 <?php

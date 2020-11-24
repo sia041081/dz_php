@@ -1,0 +1,10 @@
+.content_bd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+img {
+    width: 50vw;
+    height: 50vh;
+}

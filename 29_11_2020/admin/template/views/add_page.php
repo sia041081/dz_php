@@ -1,11 +1,15 @@
 <?php
-if (isset($_GET['id']) && !empty($_GET['id']) && $_GET['action'] == 'add_page') {
-    $sql = "SELECT * from pages where id = " . $_GET['id'];
-    $res = mysqli_query($connection, $sql);
-    $page = mysqli_fetch_assoc($res);
-}
 
-$url = isset($page['id']) ? '/admin/?action=edit_page&id=' . $page['id'] : '/admin/?action=save_page';
+if (isset($_GET['id']) && !empty($_GET['id']) && $_GET['action'] == 'add_page') {
+    $id = $_GET['id'];
+    $stmt = mysqli_prepare($connection, "SELECT * FROM pages WHERE id = ?");
+    mysqli_stmt_bind_param($stmt, "d", $id);
+    mysqli_stmt_execute($stmt);
+    $res = mysqli_stmt_get_result($stmt);
+    $page =mysqli_fetch_assoc($res);
+}
+$url = isset($_GET['id']) ? '/admin/?action=edit_page&id=' . $_GET['id'] : '/admin/?action=save_page';
+
 
 
 ?>

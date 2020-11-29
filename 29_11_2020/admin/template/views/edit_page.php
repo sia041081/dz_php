@@ -10,10 +10,10 @@ if (!empty($_POST)) {
     }
     if ($_FILES['page_img']['size'] > 0) {
         $img_url = '../images/' . $_FILES['page_img']['name'];
-        var_dump($img_url);
+//        var_dump($img_url);
         $query .= "img = " . "'$img_url'" .", ";
         move_uploaded_file($_FILES['page_img']['tmp_name'], '../images/' . $_FILES['page_img']['name']);
-        var_dump($query);
+//        var_dump($query);
     }
     $query = substr($query,0, -2);
     $query .= " WHERE id = ".$_GET['id'];

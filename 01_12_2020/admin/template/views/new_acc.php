@@ -74,12 +74,12 @@
                     $result = mysqli_query($connection, "SELECT id FROM users WHERE user_name = '$login'");
                     $myrow = mysqli_fetch_array($result);
                     if (!empty($myrow['id'])) {
-                        echo "Извините, введённый вами логин уже зарегистрирован. Введите другой логин.<br> <a href='/admin/'><h3>Назад</h3></a>";
+                        exit ("Извините, введённый вами логин уже зарегистрирован. Введите другой логин.<br> <a href='/admin/'><h3>Назад</h3></a>");
 
                     }
                     $result2 = mysqli_query($connection,"INSERT INTO users (user_name, email, password) VALUES('$login', '$mail','$password')");
                     if ($result2 == 'TRUE') {
-//                        header("Location: http://homestead.test/admin/");
+                      header("Location: http://homestead.test/admin/");
                     } else {
                         echo "Ошибка! Вы не зарегистрированы.";
                     }

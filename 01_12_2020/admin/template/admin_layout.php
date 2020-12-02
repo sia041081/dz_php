@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<? var_dump($_SESSION['session_user']);?>
+<html lang="ru">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- Meta, title, CSS, favicons, etc. -->
@@ -74,9 +73,9 @@
                     <div class="menu_section">
                         <h3>General</h3>
                         <ul class="nav side-menu">
-                            <li> <a href="index.php"><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
-                            <li><a href="/admin/?action=add_page"><i class="fa fa-edit"></i> Добавить запись <span class="fa fa-chevron-down"></span></a> </li>
-                            <li><a><i class="fa fa-desktop"></i> UI Elements <span class="fa fa-chevron-down"></span></a></li>
+                            <li> <a href="index.php"><i class="fa fa-home"></i> Home</a>
+                            <li><a href="/admin/?action=add_page"><i class="fa fa-edit"></i> Добавить запись</a> </li>
+                            <li><a href="/admin/?action=add_user"><i class="fa fa-desktop"></i> Добавить пользователя </a></li>
                     </div>
 
 

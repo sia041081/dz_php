@@ -1,12 +1,11 @@
 <?php
-$pass = (md5('my_pass'));
 if (!empty($_POST)) {
     $sql = "SELECT * FROM users WHERE user_name = '{$_POST['name_user']}'";
     mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
     $res = mysqli_query($connection, $sql);
     $users = mysqli_fetch_assoc($res);
     if ($users) {
-        if ($users['password'] == $pass) {
+        if ($users['password'] == md5($_POST['passwd'])) {
             $_SESSION['session_user'] = $users;
 
             header("Location: http://homestead.test/admin/");
@@ -64,23 +63,23 @@ if (!empty($_POST)) {
         <div id="login" class="animate form">
             <section class="login_content">
 
-                    <h1>Login Form</h1>
+                    <h1>Вход</h1>
                     <div>
-                        <input type="text" class="form-control" name="name_user" placeholder="Username" required=""/>
+                        <input type="text" class="form-control" name="name_user" placeholder="Имя" required=""/>
                     </div>
                     <div>
-                        <input type="password" class="form-control" name="password" placeholder="Password" required=""/>
+                        <input type="password" class="form-control" name="passwd" placeholder="Пароль" required=""/>
                     </div>
                 <br>
                     <div>
-                        <button type="submit" class="btn btn-default">Log in</button>
+                        <button type="submit" class="btn btn-default">Войти</button>
 
                     </div>
                     <div class="clearfix"></div>
                     <div class="separator">
 
-                        <p class="change_link">New to site?
-                            <a href="#toregister" class="to_register"> Create Account </a>
+                        <p class="change_link">Впервые на сайте?
+                            <a href="#toregister" class="to_register"> Создать аккаунт </a>
                         </p>
                         <div class="clearfix"></div>
                         <br/>
@@ -98,25 +97,25 @@ if (!empty($_POST)) {
         </div>
         <div id="register" class="animate form">
             <section class="login_content">
-                <form>
-                    <h1>Create Account</h1>
+                <form action="/admin/template/views/new_acc.php" method="post" name="">
+                    <h1>Создание аккаунта</h1>
                     <div>
-                        <input type="text" class="form-control" placeholder="Username" required=""/>
+                        <input type="text" name="login" class="form-control" placeholder="Ваш ник" required=""/>
                     </div>
                     <div>
-                        <input type="email" class="form-control" placeholder="Email" required=""/>
+                        <input type="email" name="email" class="form-control" placeholder="Email" required=""/>
                     </div>
                     <div>
-                        <input type="password" class="form-control" placeholder="Password" required=""/>
+                        <input type="password" name="password" class="form-control" placeholder="Пароль" required=""/>
                     </div>
                     <div>
-                        <a class="btn btn-default submit" href="/admin">Submit</a>
+                        <button class="btn btn-default submit" type="submit">Зарегистрироваться</button>
                     </div>
                     <div class="clearfix"></div>
                     <div class="separator">
 
-                        <p class="change_link">Already a member ?
-                            <a href="#tologin" class="to_register"> Log in </a>
+                        <p class="change_link">Уже зарегистрированы ?
+                            <a href="#tologin" class="to_register"> Вход </a>
                         </p>
                         <div class="clearfix"></div>
                         <br/>

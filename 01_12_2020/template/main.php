@@ -1,5 +1,5 @@
 <?php
-$sql = "SELECT * FROM pages;";
+$sql = "SELECT * FROM pages ORDER BY id DESC ;";
 $result = mysqli_query($connection, $sql);
 
 $articles = mysqli_fetch_all($result, MYSQLI_ASSOC);

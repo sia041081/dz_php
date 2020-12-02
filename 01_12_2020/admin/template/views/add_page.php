@@ -6,7 +6,8 @@ if (isset($_GET['id']) && !empty($_GET['id']) && $_GET['action'] == 'add_page') 
     mysqli_stmt_bind_param($stmt, "d", $id);
     mysqli_stmt_execute($stmt);
     $res = mysqli_stmt_get_result($stmt);
-    $page = mysqli_fetch_all($res);
+    $page = mysqli_fetch_array($res, MYSQLI_ASSOC);
+
 }
 
 $sql = "SELECT * FROM category";
@@ -23,6 +24,7 @@ $url = isset($_GET['id']) ? '/admin/?action=edit_page&id=' . $_GET['id'] : '/adm
             <div class="form-group">
                 <label>Заголовок</label>
                 <input class="form-control" name="title" value="<?= $page['title'] ?? '' ?>">
+<!--                --><?//=var_dump($page[])?>
             </div>
             <div class="form-group">
                 <label>Выберите изображение</label>

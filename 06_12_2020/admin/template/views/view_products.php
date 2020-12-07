@@ -19,7 +19,7 @@ $name = mysqli_fetch_all($res_2, MYSQLI_ASSOC);
 
 <div id="page-wrapper">
     <a href="/admin/?action=add_product" class="btn btn-sm btn-success"> Добавить товар</a>
-    <a href="/admin/?action=edit_page_product" class="btn btn-sm btn-success"> Добавить категорию</a>
+    <a href="/admin/?action=add_category" class="btn btn-sm btn-success"> Добавить категорию</a>
     <table class="table table-striped">
         <thead>
         <tr>
@@ -32,7 +32,7 @@ $name = mysqli_fetch_all($res_2, MYSQLI_ASSOC);
             <tr>
                 <td>
                     <div class="products">
-                        <div class="name_product" style="width: 25%">
+                        <div class="name_product" style="width: 25%; padding-right: 10px;">
                             <label>Наименование товара</label>
                             <br>
                             <a href="/admin/?action=list_product&id=<?= $page['id']?>" style="text-decoration: none; width: 25%"">

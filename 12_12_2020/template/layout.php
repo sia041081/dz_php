@@ -42,7 +42,7 @@
             <a class="nav-link" href="/?page_type=catalog">Каталог</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sample Post</a>
+            <a class="nav-link" href="/?page_type=cart">Корзина</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/?page_type=form">Связь с нами</a>

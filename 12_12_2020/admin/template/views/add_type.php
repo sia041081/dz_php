@@ -30,9 +30,9 @@ $category = mysqli_fetch_all($res, MYSQLI_ASSOC);
 <?php endforeach; ?>
     <br>
     <form action="" method="post">
-        <label>Добавить категорию</label>
+        <label>Добавить тип товара</label>
         <div class="new_cat">
-            <h3>Введите нзвание категории</h3>
+            <h3>Введите тип товара</h3>
             <input type="text" class="form-control" name="new_cat">
         </div>
         <div style="padding: 10px;">

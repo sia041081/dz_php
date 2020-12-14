@@ -6,7 +6,7 @@
         $author = $_POST['author'];
         $category = $_POST['category'];
         $imgUrl = $_FILES['page_img']['name'];
-        var_dump($_POST);
+//        var_dump($_POST);
         if (!empty($_POST)) {
             if ($_FILES['page_img']['size'] > 0) {
                 $imgUrl = '/images/' . $_FILES['page_img']['name'];

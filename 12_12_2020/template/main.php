@@ -2,7 +2,6 @@
 $sql = "SELECT * FROM pages INNER JOIN category WHERE id = id_category;";
 $result = mysqli_query($connection, $sql);
 $articles = mysqli_fetch_all($result, MYSQLI_ASSOC);
-var_dump($articles);
 require_once __DIR__ . '/headers/' . $name . '_header.php';
 ?>
 

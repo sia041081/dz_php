@@ -28,7 +28,7 @@ $pages = mysqli_fetch_all($res, MYSQLI_ASSOC);
                     </a>
                 </td>
                 <td>
-                    <a href="/admin/?action=add_product&id=<?= $page['id'] ?>">Редактировать</a>&nbsp &nbsp
+                    <a href="/admin/?action=add_page&id=<?= $page['id'] ?>">Редактировать</a>&nbsp &nbsp
                     <a href="/admin/?action=delete_page&id=<?= $page['id'] ?>">Удалить</a>
                 </td>
             </tr>

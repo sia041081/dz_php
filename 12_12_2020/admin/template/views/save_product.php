@@ -40,4 +40,4 @@ VALUES (?, ?, ?, ?, ?);';
 
     </div>
 </div>
-<meta http-equiv="refresh" content="2; url=http://homestead.test/admin/?action=view_products">
+<!--<meta http-equiv="refresh" content="2; url=http://homestead.test/admin/?action=view_products">-->

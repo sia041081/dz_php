@@ -9,11 +9,14 @@ $sql = "SELECT * FROM product
 mysqli_query($connection_shop, 'SET NAMES "utf8"');
 $res = mysqli_query($connection_shop, $sql);
 $pages = mysqli_fetch_all($res, MYSQLI_ASSOC);
+var_dump(mysqli_error($connection_shop));
+
+
 $sql_2 = "SELECT name_product, price FROM goods";
 $res_2 = mysqli_query($connection_shop, $sql_2);
 $name = mysqli_fetch_all($res_2, MYSQLI_ASSOC);
 //$page = $pages['product']['id'];
-//var_dump($name);
+var_dump(mysqli_error($connection_shop));
 
 ?>
 

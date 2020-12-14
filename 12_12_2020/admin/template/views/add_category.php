@@ -32,7 +32,7 @@ $category = mysqli_fetch_all($res, MYSQLI_ASSOC);
 <form action="" method="post">
     <label>Добавить категорию</label>
     <div class="new_cat">
-        <h3>Введите нзвание категории</h3>
+        <h3>Введите навание категории</h3>
         <input type="text" class="form-control" name="new_cat">
     </div>
     <div style="padding: 10px;">

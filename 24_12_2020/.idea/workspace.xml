@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3ec969f4-897c-4abe-bc53-b2862df15a25" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+    </include_path>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="531" y="155" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1608830667175">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="531" y="155" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1608830667175" />
+    <state x="441" y="92" key="NewPhpClassDialog" timestamp="1608830600509">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="441" y="92" key="NewPhpClassDialog/0.0.1366.738@0.0.1366.738" timestamp="1608830600509" />
+    <state x="517" y="292" key="NewPhpFileDialog" timestamp="1608825552131">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="517" y="292" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1608825552131" />
+    <state x="184" y="14" key="SettingsEditor" timestamp="1608825596338">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="184" y="14" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1608825596338" />
+  </component>
+</project>

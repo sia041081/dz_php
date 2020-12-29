@@ -1,0 +1,10 @@
+{
+    "name": "sia041081/php_oop",
+    "description": "oop_work",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "require": {}
+}

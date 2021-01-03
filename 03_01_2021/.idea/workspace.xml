@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3ec969f4-897c-4abe-bc53-b2862df15a25" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable path="composer" />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="composer.json" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1mBGA3ddHWO5DdkPmBSJeDoM5sI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views/admin/products" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\openserver\OpenServer\domains\homestead.test\app\views\admin\products" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\openserver\OpenServer\domains\homestead.test\app\core" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3ec969f4-897c-4abe-bc53-b2862df15a25" name="Default Changelist" comment="" />
+      <created>1608959425936</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608959425936</updated>
+      <workItem from="1608959426942" duration="5053000" />
+      <workItem from="1609048929004" duration="2944000" />
+      <workItem from="1609078976066" duration="1552000" />
+      <workItem from="1609135089498" duration="229000" />
+      <workItem from="1609135679709" duration="471000" />
+      <workItem from="1609136302430" duration="2434000" />
+      <workItem from="1609140273322" duration="1462000" />
+      <workItem from="1609159423453" duration="1365000" />
+      <workItem from="1609171895742" duration="1346000" />
+      <workItem from="1609213170108" duration="9749000" />
+      <workItem from="1609227505589" duration="1857000" />
+      <workItem from="1609229572619" duration="10944000" />
+      <workItem from="1609297927724" duration="6023000" />
+      <workItem from="1609470760264" duration="2317000" />
+      <workItem from="1609563754438" duration="5129000" />
+      <workItem from="1609592672948" duration="9256000" />
+      <workItem from="1609607550908" duration="2193000" />
+      <workItem from="1609642395756" duration="9217000" />
+      <workItem from="1609664223194" duration="14711000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
